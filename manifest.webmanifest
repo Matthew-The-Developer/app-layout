@@ -1,7 +1,7 @@
 {
   "name": "app-layout",
   "short_name": "app-layout",
-  "theme_color": "#014473",
+  "theme-color": "#014473",
   "background_color": "#fafafa",
   "display": "standalone",
   "scope": "./",
