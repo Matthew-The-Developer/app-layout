@@ -1,0 +1,52 @@
+:host {
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  grid-auto-rows: auto 1fr auto;
+  grid-template-areas: 
+  "header header header"
+  "left content right"
+  "footer footer footer";
+
+  .header {
+    grid-area: header;
+    height: auto;
+    mat-toolbar {
+      height: 42px;
+    }
+  }
+
+  .left {
+    grid-area: left;
+    mat-toolbar {
+      height: 100%;
+      width: 64px;
+    }
+  }
+
+  .content {
+    grid-area: content;
+    overflow: overlay;
+  }
+
+  .right {
+    grid-area: right;
+    mat-toolbar {
+      height: 100%;
+      width: 64px;
+    }
+  }
+  
+  .footer {
+    grid-area: footer;
+    mat-toolbar {
+      height: 28px;
+    }
+  }
+
+  .action {
+    position: absolute;
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+}
